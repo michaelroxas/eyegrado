@@ -1,2 +1,9 @@
-<h1>Patients#index</h1>
-<p>Find me in app/views/patients/index.html.erb</p>
+<h1>Patients</h1>
+
+<ul>
+	<% @patients.each do |px| %> 
+	<%= px.last_name %> 
+
+	<% end %>
+
+</ul>
