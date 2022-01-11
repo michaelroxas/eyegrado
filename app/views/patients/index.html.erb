@@ -1,9 +1,23 @@
 <h1>Patients</h1>
 
-<ul>
-	<% @patients.each do |px| %> 
-	<%= px.last_name %> 
+<table class="table table-striped">
+	<thead>
+		<th scope="col">Last Name</th>
+		<th scope="col">First Name</th>
+		<th scope="col">Birth Date</th>
+		<th scope="col">Sex</th>
+	</thead>
+	<tbody>
+		<% @patients.each do |px| %>
+			<tr>
+				<td><%= px.last_name %> </td>
+				<td><%= px.first_name %> </td>
+				<td><%= px.birth_date %> </td>
+				<td><%= px.sex %> </td>
 
-	<% end %>
+			</tr>
+		<% end %> 
+	</tbody>
+</table>
 
 </ul>
