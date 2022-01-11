@@ -18,11 +18,7 @@
 				<td><%= px.first_name %> </td>
 				<td><%= px.sex %> </td>
 				<td><%= px.birth_date %> </td>
-
-				<td> <%= if Date.today.year - px.birth_date.year - 1 %> </td>
-				
-
-
+				<td> <%= Date.today.year - px.birth_date.year %> 	</td>				
 			</tr>
 		<% end %> 
 	</tbody>
