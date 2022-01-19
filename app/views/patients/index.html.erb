@@ -18,7 +18,12 @@
 				<td><%= px.first_name %> </td>
 				<td><%= px.sex %> </td>
 				<td><%= px.birth_date %> </td>
-				<td> <%= Date.today.year - px.birth_date.year %> 	</td>				
+				<td> <%= Date.today.year - px.birth_date.year %> 	</td>	
+				<td>
+					<button type="button" class="btn btn-primary">View</button>
+					<button type="button" class="btn btn-info">Edit</button>
+					<button type="button" class="btn btn-danger">Delete</button> 
+				</td>			
 			</tr>
 		<% end %> 
 	</tbody>
